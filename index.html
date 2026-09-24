@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>izzynatty | Professional Scriptwriter, Screenwriter & Ghostwriter</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="apple-touch-icon" href="favicon.svg" />
+  <meta name="description" content="Adeyinka Israel (izzynatty) – I write scripts, screenplays, songs, and stories that people actually finish. Faceless YouTube, movie scripts, ghostwriting, romance beta reading." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --bg-soft: #f7f7f8;
+      --bg-card: #ffffff;
+      --border: #e5e5e8;
+      --text: #111111;
+      --text-muted: #555555;
+      --text-light: #777777;
+      --accent: #111111;
+      --accent-hover: #333333;
+      --gold: #c9a227;
+      --success: #16a34a;
+      --radius: 10px;
+      --shadow: 0 4px 24px rgba(0,0,0,0.06);
+      --shadow-hover: 0 8px 32px rgba(0,0,0,0.1);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Open Sans', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4 {
+      font-weight: 800;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+
+    a { color: var(--text); text-decoration: none; transition: all 0.2s; }
+    a:hover { color: var(--gold); }
+
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    section { padding: 90px 0; }
+
+    /* ========== HEADER ========== */
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+    }
+
+    .logo {
+      font-size: 1.4rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--text);
+    }
+    .logo span { color: var(--gold); }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      padding: 8px 14px;
+      border-radius: 6px;
+    }
+    .nav-links a:hover { color: var(--text); background: var(--bg-soft); }
+
+    .nav-cta {
+      background: var(--text) !important;
+      color: #fff !important;
+      padding: 10px 20px !important;
+      border-radius: 8px !important;
+      font-weight: 700 !important;
+    }
+    .nav-cta:hover {
+      background: var(--accent-hover) !important;
+      color: #fff !important;
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.6rem;
+      cursor: pointer;
+      color: var(--text);
+    }
+
+    /* ========== HERO ========== */
+    .hero {
+      padding: 140px 0 90px;
+      background: var(--bg-soft);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: #111;
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 100px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.3rem, 4.5vw, 3.3rem);
+      margin-bottom: 18px;
+      max-width: 560px;
+    }
+
+    .hero-sub {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      max-width: 480px;
+      margin-bottom: 32px;
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 26px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      transition: all 0.2s;
+      cursor: pointer;
+      border: none;
+      font-family: inherit;
+    }
+
+    .btn-primary {
+      background: #111;
+      color: #fff;
+    }
+    .btn-primary:hover {
+      background: #333;
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background: #fff;
+      color: #111;
+      border: 1.5px solid var(--border);
+    }
+    .btn-secondary:hover {
+      border-color: #111;
+      transform: translateY(-2px);
+    }
+
+    .hero-photo {
+      position: relative;
+      text-align: center;
+    }
+
+    .hero-photo img {
+      width: 100%;
+      max-width: 380px;
+      border-radius: 16px;
+      box-shadow: var(--shadow-hover);
+      object-fit: cover;
+    }
+
+    .photo-badge {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #fff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      font-size: 0.85rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    /* ========== ABOUT ========== */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 60px;
+      align-items: start;
+    }
+
+    .section-label {
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+
+    .about h2 {
+      font-size: 2.3rem;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      color: var(--text-muted);
+      margin-bottom: 16px;
+      font-size: 1.05rem;
+    }
+
+    .about-highlight {
+      background: var(--bg-soft);
+      border-left: 4px solid #111;
+      padding: 20px 24px;
+      margin: 28px 0;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    .tag {
+      background: var(--bg-soft);
+      border: 1px solid var(--border);
+      padding: 7px 16px;
+      border-radius: 100px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+
+    /* ========== SERVICES ========== */
+    .services { background: var(--bg-soft); }
+
+    .section-header {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto 50px;
+    }
+
+    .section-header h2 {
+      font-size: 2.3rem;
+      margin-bottom: 12px;
+    }
+
+    .section-header p {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+    }
+
+    .service-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px 28px;
+      transition: all 0.25s;
+      box-shadow: var(--shadow);
+    }
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-hover);
+      border-color: #ccc;
+    }
+
+    .service-icon {
+      width: 48px;
+      height: 48px;
+      background: #111;
+      color: #fff;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      margin-bottom: 18px;
+    }
+
+    .service-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+    }
+
+    .service-card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 18px;
+    }
+
+    .service-card ul {
+      list-style: none;
+      margin-bottom: 22px;
+    }
+
+    .service-card li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 8px;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+    .service-card li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--success);
+      font-weight: 700;
+    }
+
+    .service-cta {
+      display: inline-block;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #111;
+      border-bottom: 2px solid #111;
+      padding-bottom: 2px;
+    }
+    .service-cta:hover {
+      color: var(--gold);
+      border-color: var(--gold);
+    }
+
+    /* ========== PROCESS ========== */
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .step {
+      text-align: center;
+      padding: 28px 18px;
+      background: var(--bg-soft);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+    }
+
+    .step-num {
+      width: 42px;
+      height: 42px;
+      background: #111;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      margin: 0 auto 16px;
+      font-size: 1.1rem;
+    }
+
+    .step h4 {
+      font-size: 1.05rem;
+      margin-bottom: 8px;
+    }
+
+    .step p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    /* ========== RESULTS / PORTFOLIO ========== */
+    .results { background: var(--bg-soft); }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .testimonial {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .stars {
+      color: var(--gold);
+      font-size: 1.1rem;
+      letter-spacing: 2px;
+      margin-bottom: 14px;
+    }
+
+    .testimonial p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 18px;
+      font-style: italic;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .author-avatar {
+      width: 42px;
+      height: 42px;
+      background: #111;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+
+    .author-info strong {
+      display: block;
+      font-size: 0.9rem;
+    }
+
+    .author-info span {
+      font-size: 0.8rem;
+      color: var(--text-light);
+    }
+
+    /* ========== FAQ ========== */
+    .faq-list {
+      max-width: 780px;
+      margin: 40px auto 0;
+    }
+
+    .faq-item {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      margin-bottom: 12px;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    .faq-question {
+      width: 100%;
+      text-align: left;
+      padding: 18px 24px;
+      background: none;
+      border: none;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--text);
+    }
+
+    .faq-question:hover { background: var(--bg-soft); }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+
+    .faq-answer-inner {
+      padding: 0 24px 20px;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 300px;
+    }
+
+    .faq-item.open .faq-icon {
+      transform: rotate(45deg);
+    }
+
+    .faq-icon {
+      font-size: 1.4rem;
+      font-weight: 400;
+      transition: transform 0.2s;
+    }
+
+    /* ========== CONTACT ========== */
+    .contact { background: var(--bg-soft); }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+
+    .contact-info h2 {
+      font-size: 2.2rem;
+      margin-bottom: 16px;
+    }
+
+    .contact-info p {
+      color: var(--text-muted);
+      margin-bottom: 28px;
+      font-size: 1.05rem;
+    }
+
+    .contact-methods {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .contact-method {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 16px 20px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      transition: all 0.2s;
+    }
+    .contact-method:hover {
+      border-color: #111;
+      transform: translateX(4px);
+    }
+
+    .contact-method .icon {
+      width: 42px;
+      height: 42px;
+      background: #111;
+      color: #fff;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    .contact-method strong {
+      display: block;
+      font-size: 0.9rem;
+    }
+
+    .contact-method span {
+      font-size: 0.85rem;
+      color: var(--text-light);
+    }
+
+    .contact-form {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px;
+      box-shadow: var(--shadow);
+    }
+
+    .contact-form h3 {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1.5px solid var(--border);
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 0.95rem;
+      transition: border-color 0.2s;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: #111;
+    }
+
+    .form-group textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .form-note {
+      font-size: 0.8rem;
+      color: var(--text-light);
+      margin-top: 12px;
+    }
+
+    /* ========== FOOTER ========== */
+    footer {
+      background: #111;
+      color: #aaa;
+      padding: 40px 0 30px;
+      text-align: center;
+    }
+
+    footer .logo {
+      color: #fff;
+      margin-bottom: 12px;
+      display: inline-block;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+      margin-bottom: 8px;
+    }
+
+    footer a { color: #ccc; }
+    footer a:hover { color: var(--gold); }
+
+    /* ========== RESPONSIVE ========== */
+    @media (max-width: 900px) {
+      .hero-grid,
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .process-steps {
+        grid-template-columns: 1fr 1fr;
+      }
+      .hero-photo { order: -1; }
+      .hero-photo img { max-width: 280px; }
+    }
+
+    @media (max-width: 700px) {
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0; right: 0;
+        background: #fff;
+        flex-direction: column;
+        padding: 20px;
+        gap: 4px;
+        border-bottom: 1px solid var(--border);
+        box-shadow: var(--shadow);
+      }
+      .nav-links.open { display: flex; }
+      .menu-toggle { display: block; }
+      .process-steps { grid-template-columns: 1fr; }
+      section { padding: 70px 0; }
+      .hero { padding: 120px 0 70px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header>
+    <div class="container nav">
+      <a href="#" class="logo">izzy<span>natty</span></a>
+      <button class="menu-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact" class="nav-cta">Contact Me</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <div class="hero-badge">Scriptwriter • Screenwriter • Ghostwriter</div>
+          <h1>I write scripts, screenplays, songs & stories that people actually finish.</h1>
+          <p class="hero-sub">Your idea is not the problem. The writing is. Structure, hook, and writing that makes people stay.</p>
+          <div class="hero-ctas">
+            <a href="#contact" class="btn btn-primary">Inbox Me</a>
+            <a href="#services" class="btn btn-secondary">View Services</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img src="profile.jpg" alt="Adeyinka Israel – izzynatty" />
+          <div class="photo-badge">Adeyinka Israel · izzynatty</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div>
+          <div class="section-label">About Me</div>
+          <h2>Writing that holds attention</h2>
+          <p>I’m <strong>Adeyinka Israel</strong> (izzynatty). I write scripts, screenplays, songs, and stories that people actually finish.</p>
+          <p>Screenplays. Movie scripts. TV. Faceless YouTube. Ghostwriting. Romance beta reading. If it needs to hold attention, I write it.</p>
+          <div class="about-highlight">
+            Not filler. Structure, hook, and writing that makes people stay.
+          </div>
+        </div>
+        <div>
+          <p>I help creators, producers, and authors turn ideas into finished work that gets watched, read, or heard — whether it’s a feature screenplay, a faceless horror video built for retention, a song with a sticky hook, or a full ghostwritten book under your name.</p>
+          <p>I also beta-read romance novels with honest, useful feedback on tropes, chemistry, pacing, spice, and HEA.</p>
+          <div class="tags">
+            <span class="tag">Movie Scripts</span>
+            <span class="tag">TV Pilots</span>
+            <span class="tag">Faceless YouTube</span>
+            <span class="tag">Horror</span>
+            <span class="tag">Songs</span>
+            <span class="tag">Ghostwriting</span>
+            <span class="tag">Romance Beta</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">What I Offer</div>
+        <h2>Professional Services</h2>
+        <p>Clear offerings. Strong structure. Writing built for results.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-icon">🎬</div>
+          <h3>Faceless Horror Videos</h3>
+          <p>I don’t just write horror scripts. I write faceless horror videos with a hook in the first seconds, slow dread, a twist people comment on, and pacing that keeps retention high — so YouTube can push it.</p>
+          <ul>
+            <li>Hook in the opening seconds</li>
+            <li>Slow-burn dread & strong twist</li>
+            <li>Pacing optimized for retention</li>
+          </ul>
+          <a href="#contact" class="service-cta">Inbox me for this service →</a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">📜</div>
+          <h3>Screenplays & Movie Scripts</h3>
+          <p>I write and rewrite movie scripts, TV pilots, and short films. Industry formatting. Strong structure. Dialogue that sounds like it belongs on screen.</p>
+          <ul>
+            <li>Feature & short film scripts</li>
+            <li>TV pilots & series</li>
+            <li>Rewrites & structural notes</li>
+          </ul>
+          <a href="#contact" class="service-cta">Inbox me for this service →</a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">🎵</div>
+          <h3>Songwriting</h3>
+          <p>I write songs, not just lyrics. Hook in the first lines. Chorus people can sing. Story in the verses.</p>
+          <ul>
+            <li>Memorable hooks</li>
+            <li>Singable choruses</li>
+            <li>Story-driven verses</li>
+          </ul>
+          <a href="#contact" class="service-cta">Inbox me for this service →</a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">✍️</div>
+          <h3>Ghostwriting</h3>
+          <p>I ghostwrite books, stories, scripts, and songs. Your name. Your story. I do the writing.</p>
+          <ul>
+            <li>Books & short stories</li>
+            <li>Scripts & screenplays</li>
+            <li>Songs under your name</li>
+          </ul>
+          <a href="#contact" class="service-cta">Inbox me for this service →</a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">💕</div>
+          <h3>Romance Beta Reading</h3>
+          <p>I beta-read romance. Tropes, chemistry, pacing, spice, HEA. Honest notes on what works and what doesn’t.</p>
+          <ul>
+            <li>Tropes & chemistry check</li>
+            <li>Pacing & spice feedback</li>
+            <li>HEA & overall notes</li>
+          </ul>
+          <a href="#contact" class="service-cta">Inbox me for this service →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROCESS ========== -->
+  <section class="process" id="process">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">How I Work</div>
+        <h2>My Process</h2>
+        <p>Simple, clear, and focused on getting your project finished.</p>
+      </div>
+
+      <div class="process-steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h4>You Reach Out</h4>
+          <p>Tell me what you need — idea, draft, or full project. Inbox me with details.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h4>We Align</h4>
+          <p>I confirm scope, timeline, and style so we’re on the same page before writing starts.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h4>I Write</h4>
+          <p>Structure, hook, and writing that holds attention. You get a professional deliverable.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <h4>You Receive</h4>
+          <p>Final work ready to use. Revisions if needed. Then you can publish or shoot.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RESULTS ========== -->
+  <section class="results" id="results">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Client Feedback</div>
+        <h2>Results & Reviews</h2>
+        <p>What clients and creators say after working with me.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p>“The faceless horror script he delivered had a hook that hit in the first 3 seconds. Retention stayed high and the twist got comments. Exactly what I needed for YouTube.”</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">JK</div>
+            <div class="author-info">
+              <strong>James K.</strong>
+              <span>Faceless YouTube Creator</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p>“Professional screenplay formatting and dialogue that actually sounded real. He rewrote my pilot and the structure finally worked. Highly recommend.”</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">SA</div>
+            <div class="author-info">
+              <strong>Sarah A.</strong>
+              <span>Indie Filmmaker</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p>“Ghostwrote a full short story under my name. Clean, emotional, and ready to publish. Communication was smooth the whole way.”</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">MO</div>
+            <div class="author-info">
+              <strong>Michael O.</strong>
+              <span>Author</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p>“The song had a hook that stuck and a chorus people could actually sing. Verses told a clear story. Better than I expected.”</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">TL</div>
+            <div class="author-info">
+              <strong>Tunde L.</strong>
+              <span>Musician</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p>“Honest beta notes on my romance manuscript. He caught pacing issues and gave clear feedback on chemistry and spice level. Very useful.”</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">EN</div>
+            <div class="author-info">
+              <strong>Esther N.</strong>
+              <span>Romance Author</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p>“Fast, professional, and the script felt cinematic. I’ll be coming back for the next project.”</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">DR</div>
+            <div class="author-info">
+              <strong>David R.</strong>
+              <span>Content Creator</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Questions</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Everything you need to know before working with me.</p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            What services do you offer?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              I write movie scripts & screenplays, faceless YouTube horror/story videos, songs, ghostwritten books/stories/scripts/songs, and I also provide romance beta reading with honest, detailed notes.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            How do I start a project with you?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Simply inbox me via WhatsApp, Telegram, email, or the contact form on this site. Tell me what you need and I’ll reply with next steps.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Do you write in industry-standard format?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Yes. All screenplays and movie scripts are written in proper industry formatting so they’re ready for production or submission.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Can you write faceless YouTube scripts optimized for retention?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Yes. I specialize in faceless horror and story videos with a strong hook in the first seconds, slow dread, twists, and pacing designed to keep viewers watching.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Do you ghostwrite under my name?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Absolutely. Your name, your story. I handle the writing. This applies to books, short stories, scripts, and songs.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            What does romance beta reading include?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              I give honest feedback on tropes, chemistry, pacing, spice level, HEA, and overall strengths and weaknesses of the manuscript.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            How long does a typical project take?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              It depends on length and complexity. Short scripts or songs can be faster. Full screenplays or books take longer. I’ll give you a clear timeline once I understand the project.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Do you offer revisions?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Yes. Reasonable revisions are included so the final work matches what you need.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            How do I pay?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Payment details are discussed after we agree on the project. Common options include bank transfer or other convenient methods.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Can I send an existing draft for rewrite or notes?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Yes. Send your idea or your current draft. I can rewrite, strengthen structure, improve dialogue, or give detailed notes depending on what you need.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="section-label">Get In Touch</div>
+          <h2>Ready to start?</h2>
+          <p>Inbox me with what you need — a full script, faceless horror story, song, ghostwritten piece, or beta read. I’ll reply as soon as possible.</p>
+
+          <div class="contact-methods">
+            <a href="https://wa.me/2347048279908" class="contact-method" target="_blank" rel="noopener">
+              <div class="icon">💬</div>
+              <div>
+                <strong>WhatsApp</strong>
+                <span>+234 704 827 9908</span>
+              </div>
+            </a>
+            <a href="https://t.me/Scriptwritermoviescript" class="contact-method" target="_blank" rel="noopener">
+              <div class="icon">✈️</div>
+              <div>
+                <strong>Telegram</strong>
+                <span>@Scriptwritermoviescript</span>
+              </div>
+            </a>
+            <a href="mailto:fisayomiisrael8@gmail.com" class="contact-method">
+              <div class="icon">✉️</div>
+              <div>
+                <strong>Email</strong>
+                <span>fisayomiisrael8@gmail.com</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <h3>Send a Message</h3>
+          <form action="mailto:fisayomiisrael8@gmail.com" method="POST" enctype="text/plain">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" required placeholder="Full name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" required placeholder="you@email.com" />
+            </div>
+            <div class="form-group">
+              <label for="service">Service Needed</label>
+              <select id="service" name="service">
+                <option value="">Select a service</option>
+                <option>Faceless Horror Video</option>
+                <option>Screenplay / Movie Script</option>
+                <option>Songwriting</option>
+                <option>Ghostwriting</option>
+                <option>Romance Beta Reading</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Project Details</label>
+              <textarea id="message" name="message" required placeholder="Tell me about your project..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%">Send Message</button>
+            <p class="form-note">Or contact me directly on WhatsApp or Telegram for faster reply.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="container">
+      <a href="#" class="logo">izzy<span>natty</span></a>
+      <p>Adeyinka Israel · Professional Scriptwriter, Screenwriter & Ghostwriter</p>
+      <p>© <span id="year"></span> izzynatty. All rights reserved.</p>
+      <p style="margin-top:12px">
+        <a href="https://wa.me/2347048279908">WhatsApp</a> ·
+        <a href="https://t.me/Scriptwritermoviescript">Telegram</a> ·
+        <a href="mailto:fisayomiisrael8@gmail.com">Email</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function toggleFaq(btn) {
+      const item = btn.parentElement;
+      const isOpen = item.classList.contains('open');
+      
+      document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('open'));
+      
+      if (!isOpen) {
+        item.classList.add('open');
+      }
+    }
+  </script>
+</body>
+</html>
